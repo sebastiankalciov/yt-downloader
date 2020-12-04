@@ -3,12 +3,17 @@
 A simple to use **YouTube** video downloader.
 
 ## Requirements:
-You need to install [Python 3.8](https://www.python.org/) and the pip module [pytube](https://pypi.org/project/pytube/)
+You need to install:
+* [Python 3.8](https://www.python.org/)
+* Pip Module [pytube](https://pypi.org/project/pytube/)
+* Pip Module [Flask](https://pypi.org/project/Flask/)
 
 
 ## Usage
-Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app)
+Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app/templates).
 ```bash
-python main.py
+$ set FLASK_APP = run.py
+$ flask run
+# Make sure you are in the right directory, otherwise you will get an error.
 ```
 

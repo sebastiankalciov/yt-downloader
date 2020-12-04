@@ -19,5 +19,5 @@ $ flask run
 # Make sure you are in the right directory, otherwise you will get an error.
 ```
 
-<img src = "https://duck1337.is-inside.me/kAc7elMZ.png" width = "500px">
+<img src = "https://duck1337.is-inside.me/T0T4Wv60.png" width = "500px">
 

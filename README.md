@@ -1,4 +1,4 @@
-# yt-downloader <img src="https://i.imgur.com/vRz9BFk.png" width="30px">
+# <img src="https://i.imgur.com/vRz9BFk.png" width="30px"> yt-downloader
 
 A simple to use **YouTube** video downloader.
 

@@ -14,7 +14,7 @@ def index(name = None):
                 youtube = pytube.YouTube(video_url)
                 video = youtube.streams.first()
                 video.download(f'{os.path.abspath(os.getcwd())}/output')
-                return redirect(url_for('success.html'))
+                return redirect(url_for('successPage'))
 
             except Exception as e:
                 print(f"Error: {e}")
@@ -22,7 +22,7 @@ def index(name = None):
     return render_template('index.html')
 
 @app.route('/success')
-def success():
+def successPage():
     return render_template('success.html')
 
 if __name__ == "__main__":

@@ -6,6 +6,9 @@ app = Flask(__name__,template_folder='Front-End')
 def index(name = None):
 
     if request.method == "GET":
+        print(request.args)
+        if request.args.get('input'):
+            print(request.args.get('input'))
         print('ce fa ma')
 
     return render_template('index.html', data = {"title":'duckcave'})

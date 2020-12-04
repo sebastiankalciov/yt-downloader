@@ -16,10 +16,10 @@ def index(name = None):
                 video = youtube.streams.first()
                 video.download(f'{os.path.abspath(os.getcwd())}/output')
 
-                return render_template('success.html')
+                return render_template('finalPage.html', data = {"message":"YouTube video downloaded successfully!"})
 
             except Exception as e:
-                return render_template('error.html')
+                return render_template('finalPage.html', data = {"message":"Error: Issue related to download attribute, check if your link is alright."})
                 print(f"Error: {e}")
 
     return render_template('index.html')

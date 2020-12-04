@@ -14,13 +14,16 @@ def index(name = None):
                 youtube = pytube.YouTube(video_url)
                 video = youtube.streams.first()
                 video.download(f'{os.path.abspath(os.getcwd())}/output')
-                return render_template()
+                return redirect(url_for('success.html'))
 
             except Exception as e:
                 print(f"Error: {e}")
 
-    return render_template('index.html', data = {"title":'duckcave'})
+    return render_template('index.html')
 
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

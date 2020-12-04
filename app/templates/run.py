@@ -1,15 +1,12 @@
-import pytube
-import os
-video_url = input('Type the link of the youtube video: ')
+from flask import Flask, session, redirect, url_for, request, make_response, render_template
 
-try:
+app = Flask(__name__,template_folder='Front-End')
 
-    youtube = pytube.YouTube(video_url)
-    video = youtube.streams.first()
-    video.download('./output')
-    print('Video downloaded successfully!')
+@app.route('/', methods = ['POST','GET'])
+def index(name = None):
 
-except Exception as e:
-    print(f"Error: {e}")
+    return render_template('index.html', data = {"title":'duckcave'})
 
-os.system("pause")
+
+if __name__ == "__main__":
+    app.run(debug=True)

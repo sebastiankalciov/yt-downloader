@@ -1,4 +1,5 @@
 import pytube
+import os
 video_url = input('Type the link of the youtube video: ')
 
 try:
@@ -9,7 +10,6 @@ try:
     print('Video downloaded successfully!')
 
 except Exception as e:
-    print(f'Error: {e}')
+    print(f"Error: {e}")
 
-import os
 os.system("pause")

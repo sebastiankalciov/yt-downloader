@@ -1,6 +1,8 @@
 # <img src="https://i.imgur.com/vRz9BFk.png" width="30px"> yt-downloader
 
 A simple to use **YouTube** video downloader.
+## Technology used
+This tool is made using **Python(Flask)** for Back-End, **HTML** and **Bootstrap** for Front-End.
 
 ## Requirements:
 You need to install:

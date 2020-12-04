@@ -4,7 +4,7 @@ A simple to use **YouTube** video downloader.
 
 ## Requirements:
 You need to install:
-* [Python 3.8](https://www.python.org/)
+* [Python 3.8](https://www.python.org/) (I strongly recommand if you are a beginner to install [Anaconda](https://www.anaconda.com/products/individual) because it's easier to install and it installs all the stuff you need to run Python apps.)
 * Pip Module [pytube](https://pypi.org/project/pytube/)
 * Pip Module [Flask](https://pypi.org/project/Flask/)
 

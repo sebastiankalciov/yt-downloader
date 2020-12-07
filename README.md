@@ -24,6 +24,8 @@ Reminder: This project is still in beta, bugs may appear, it's not completely do
 * A brand new design.
 * More functionality.
 * Reducing the size of the code.
+Hopefully, to be done untill the end of this year.
+
  
 <img src = "https://duck1337.is-inside.me/kAc7elMZ.png" width = "500px">
 

@@ -18,6 +18,11 @@ $ set FLASK_APP = run.py
 $ flask run
 # Make sure you are in the right directory, otherwise you will get an error.
 ```
-
+## Up coming updates
+Reminder: This project is still in beta, bugs may appear, it's not completely done. 
+* A brand new design.
+* More functionality.
+* Reducing the size of the code.
+ 
 <img src = "https://duck1337.is-inside.me/kAc7elMZ.png" width = "500px">
 

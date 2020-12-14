@@ -1,7 +1,3 @@
-#titlu:hover{
-    color: black;
-
-}
-.html{
-    background-color: aliceblue;
-}
+@import "../../../../modules/node_modules/tailwindcss/base.css";
+@import "../../../../modules/node_modules/tailwindcss/components.css";
+@import "../../../../modules/node_modules/tailwindcss/utilities.css";

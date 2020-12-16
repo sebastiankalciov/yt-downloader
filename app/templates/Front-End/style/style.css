@@ -1,8 +1,0 @@
-/** This is the custom css, later this week I will install tailwindcss but first I need to install postcss
-    because its kinda tricky to install using npm in a specific directory.
-
-**/
-
-@import "../../../../node_modules/tailwindcss/base.css";
-@import "../../../../node_modules/tailwindcss/components";
-@import "../../../../node_modules/tailwindcss/utilities";

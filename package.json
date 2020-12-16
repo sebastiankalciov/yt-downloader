@@ -1,0 +1,25 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "description": "A simple to use **YouTube** video downloader.\r ## Technology used\r This tool is made using **Python(Flask)** for Back-End, **HTML** and **Bootstrap** for Front-End.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducktheduck/yt-downloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ducktheduck/yt-downloader/issues"
+  },
+  "homepage": "https://github.com/ducktheduck/yt-downloader#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

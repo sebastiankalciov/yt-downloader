@@ -2,7 +2,7 @@
 
 A simple to use **YouTube** video downloader.
 ## Technology used
-This tool is made using **Python(Flask)** for Back-End, **HTML** and **Bootstrap** for Front-End.
+This tool is made using **Python(Flask)** for Back-End, **HTML** and **Tailwindcss** for Front-End.
 
 ## Requirements:
 You need to install:
@@ -27,6 +27,6 @@ Reminder: This project is still in beta, bugs may appear, it's not completely do
 Hopefully, to be done untill the end of this year.
 
  
-<img src = "https://duck1337.is-inside.me/kAc7elMZ.png" width = "500px">
+<img src = "https://duck1337.is-inside.me/bXc7qriI.png" width = "500px">
 
 

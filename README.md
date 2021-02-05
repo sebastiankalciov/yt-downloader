@@ -6,7 +6,7 @@ This tool is made using **Python(Flask)** for Back-End, **HTML** and **Tailwindc
 
 ## Requirements:
 You need to install:
-* [Python 3.8](https://www.python.org/) (I strongly recommand to you, if you're a beginner in IT to install [Anaconda](https://www.anaconda.com/products/individual) because it's easier to install and it installs all the stuff you need to run Python apps.)
+* [Python 3.8](https://www.python.org/) (I strongly recommand, if you're a beginner in programming, to install [Anaconda](https://www.anaconda.com/products/individual) because it's easier to install and it comes with all the stuff you need to run Python apps.)
 * Pip Module [pytube](https://pypi.org/project/pytube/)
 * Pip Module [Flask](https://pypi.org/project/Flask/)
 
@@ -24,7 +24,7 @@ Reminder: This project is still in beta, bugs may appear, it's not completely do
 * A brand new design.
 * More functionality.
 * Reducing the size of the code.
-Hopefully, to be done untill the end of this year.
+Hopefully, to be done by the end of this year.
 
  
 <img src = "https://duck1337.is-inside.me/bXc7qriI.png" width = "500px">

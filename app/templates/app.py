@@ -1,6 +1,6 @@
 from flask import Flask, session, redirect, url_for, request, make_response, render_template
 import pytube
-import os   #                                      ^
+import os    #                                     ^
 # Imports the modules used in the code from below. |
 app = Flask(__name__, template_folder='Front-End', static_folder='Front-End/static') # The app.
 

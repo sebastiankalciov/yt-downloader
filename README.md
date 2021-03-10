@@ -21,7 +21,7 @@ $ flask run
 
 ## Up coming updates
 Reminder: This project is still in beta, bugs may appear, it's not completely done. 
-* A brand new design.
+* A modern design.
 * More functionality.
 * Reducing the size of the code.
 Hopefully, to be done by the end of this year.

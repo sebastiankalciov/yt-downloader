@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 
 from YTDownloader.views import (
-    home_view
+    home_view,
+    aboutPage_view
 )
 urlpatterns = [
     path('', home_view, name = "home"),
+    path('about', aboutPage_view, name = "about"),
     path('admin/', admin.site.urls),
 ]

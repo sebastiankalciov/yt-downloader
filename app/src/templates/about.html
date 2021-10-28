@@ -1,15 +1,17 @@
-<html class = "text-gray-300 p-5 select-none" style = "background-color: 0a0a0a;">
+<html class = "text-gray-300 p-5 select-none m-1" style = "background-color: 0a0a0a;">
 
     {%load static%}
 
     <head>
     
+        <title> YT-Downloader | About</title>
         <!-- Important code about responsivity -->
         <meta charset = "UTF-8">
         
         <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
-
         <meta name = "viewport" content = "user-scalable=no,width=device-width,initial-scale=1">
+
+        <link rel = "icon" type "image/png" href = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEB0lEQVR4nO3cz4sbdRjH8ffznU0ubtWboKLShVJJNz/Y7mYRT7q9bKl/gdZDtRb1oJRCz3pREdaq0ArVg/4Hihbr9ubBZLvMJJiCQrHYIngr7nrJ5pvHwzay1RW77Sbfmczzuk1ymA/zSYYnM98MGGOMMcYYY4wxxpi8kH++sFIuH1DnXlJYAJ4A7ht9rLHyJ3BNYFn6/fOz7faPW9/8u4BOqVRcKxSWBE4AbtQpc8Ijcnay2z1Z6nS6cKuATqlUXC8WL6D6TNh8OaF6abLXWyx1Ol0HsFYoLNnBHyGRZ9cnJt4HkJVy+UDfuQSIAsfKGy+qFedFXsYOfgiRihxzIrIQOkmOHXLAY6FT5NjjDpgMnSLH9ti8H5gVEJgVEJgVEJgVEJgVEJgVEFjqChD4znk/5byfEvgA2AidaZikUa1q6BC36ff31tvtXwabjUplHyJLwGLAVEOTugLqSfKvu3QAzXL5iDq3BEyNONJQpe4U9F/m2u2voih6UuENYC10nt2SmQIADq6ubswnyZkNkf2ofgGk6tt7NzJVwMDTcfxbvdU6KlBH9YfQee5FJgsYmEuSlblW6ylEXgR+D53nbmS6AAABrcfx50XYj8i7QDd0pp3IfAEDtSS5WY/j06hOA9+EznOnxqaAgXqr9XM9SQ5Lv/8ccDV0nv8zdgUMZGVsHdsCIBtj61gXMJDmsTUXBQykcWzNVQFw+9iqsBw6T+4KGKglyc2JKDoROkduC0iL3BZweWbmgZ7350LnyF0BCtKo1Y5673+SzX8BBTUROsAoNavV2abqh6jOh84ykIsCvq/VHi70++8oPI/ItnfcQhnrAi7PzBR63r8qqm8hcn/oPNsZ2wKa5fIR7/2SpPwe8tgVMFhFoRlZRTE2BcTV6oNdkdOovgkUQ+e5U5kvQEGatdoLXdX3UH0odJ6dynQBaRwrdyqTBaR5rNypTBWwZax8G5E9ofPshswUkJWxcqdSdy1oZXp679btRqWyr1Gtfq3OfcmYHXxI4eJcheXI+1ekWJS+968rvAYUQucaltSdggQW+lF0Fe9DRxmJ1J2C8sYKCMwKCMwKCMwKCMwKCMwKCMyR4pXDOfCHA66HTpFjvzqBi6FT5JWqfutQPQ/k43d/unic+8zNtVodRM6GTpM3Ah/Px/EVBzDZ7Z5E9VLoUHmhsOyi6BTcGkNLnU53stdbRPUj7HQ0TD2BMxNRtHhwdXUDtnl8fbNSKanIMeAQm4+vt8da3pt14BoiFxU+nY/jK6EDGWOMSYehL2pqVKuHgU+AR4a9r112w4kcn43jC8PcySiuhp4jewcf4NH+5gdnqOxydGBDL8CJHAduDHs/u07kumxmN8YYY4wxxhhjjDFmV/wFDzZBkHfvXGoAAAAASUVORK5CYII=">
         <link rel = "stylesheet" href = "{% static "tailwind.css" %}" type = 'text/css'> 
 
         <!-- Navigation bar -->
@@ -20,27 +22,51 @@
             <li class = "inline hover:text-red-500"> <a href = "/download">Download</a></li>
 
         </ul>
+
+
         <!-- Title & Subtitle -->
 
         <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> About this project... </h1>
         <h4 id = "subtitle" class = "text-center text-2xl text-gray-300 leading-loose"><b class = "text-red-500">YT</b> Video Downloader</h4>
 
         
-
     </head>
 
     <body>
 
         <!-- Info div with bouncing logo -->
 
-        <div class = "leading-loose space-y-36 py-8">
+        <div class = "container container max-w-xl m-auto flex flex-wrap flex-col md:flex-row items-left justify-start inline text-2xl py-36">
 
-            <img class = "inline animate-bounce w-200 h-200 leading-loose flex-grow" src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-youtube-social-media-justicon-flat-justicon.png"/>
+            <!--<img class = "inline animate-bounce w-200 h-200 leading-loose flex-grow" src = "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-youtube-social-media-justicon-flat-justicon.png"/>
+                -->
+                <div class = "inline">
+                    <img class = "animate-bounce w-200 h-200 leading-loose" src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEB0lEQVR4nO3cz4sbdRjH8ffznU0ubtWboKLShVJJNz/Y7mYRT7q9bKl/gdZDtRb1oJRCz3pREdaq0ArVg/4Hihbr9ubBZLvMJJiCQrHYIngr7nrJ5pvHwzay1RW77Sbfmczzuk1ymA/zSYYnM98MGGOMMcYYY4wxxpi8kH++sFIuH1DnXlJYAJ4A7ht9rLHyJ3BNYFn6/fOz7faPW9/8u4BOqVRcKxSWBE4AbtQpc8Ijcnay2z1Z6nS6cKuATqlUXC8WL6D6TNh8OaF6abLXWyx1Ol0HsFYoLNnBHyGRZ9cnJt4HkJVy+UDfuQSIAsfKGy+qFedFXsYOfgiRihxzIrIQOkmOHXLAY6FT5NjjDpgMnSLH9ti8H5gVEJgVEJgVEJgVEJgVEJgVEFjqChD4znk/5byfEvgA2AidaZikUa1q6BC36ff31tvtXwabjUplHyJLwGLAVEOTugLqSfKvu3QAzXL5iDq3BEyNONJQpe4U9F/m2u2voih6UuENYC10nt2SmQIADq6ubswnyZkNkf2ofgGk6tt7NzJVwMDTcfxbvdU6KlBH9YfQee5FJgsYmEuSlblW6ylEXgR+D53nbmS6AAABrcfx50XYj8i7QDd0pp3IfAEDtSS5WY/j06hOA9+EznOnxqaAgXqr9XM9SQ5Lv/8ccDV0nv8zdgUMZGVsHdsCIBtj61gXMJDmsTUXBQykcWzNVQFw+9iqsBw6T+4KGKglyc2JKDoROkduC0iL3BZweWbmgZ7350LnyF0BCtKo1Y5673+SzX8BBTUROsAoNavV2abqh6jOh84ykIsCvq/VHi70++8oPI/ItnfcQhnrAi7PzBR63r8qqm8hcn/oPNsZ2wKa5fIR7/2SpPwe8tgVMFhFoRlZRTE2BcTV6oNdkdOovgkUQ+e5U5kvQEGatdoLXdX3UH0odJ6dynQBaRwrdyqTBaR5rNypTBWwZax8G5E9ofPshswUkJWxcqdSdy1oZXp679btRqWyr1Gtfq3OfcmYHXxI4eJcheXI+1ekWJS+968rvAYUQucaltSdggQW+lF0Fe9DRxmJ1J2C8sYKCMwKCMwKCMwKCMwKCMwKCMyR4pXDOfCHA66HTpFjvzqBi6FT5JWqfutQPQ/k43d/unic+8zNtVodRM6GTpM3Ah/Px/EVBzDZ7Z5E9VLoUHmhsOyi6BTcGkNLnU53stdbRPUj7HQ0TD2BMxNRtHhwdXUDtnl8fbNSKanIMeAQm4+vt8da3pt14BoiFxU+nY/jK6EDGWOMSYehL2pqVKuHgU+AR4a9r112w4kcn43jC8PcySiuhp4jewcf4NH+5gdnqOxydGBDL8CJHAduDHs/u07kumxmN8YYY4wxxhhjjDFmV/wFDzZBkHfvXGoAAAAASUVORK5CYII="/>
+                </div>
+                
+                <div class = "inline align-top">
+                    <p>This project was concepted 1 year ago as a simple <b class = "text-white">Flask</b> Based Website</p>
+                    <p> for downloading <b class = "text-red-500">YouTube</b> Videos by providing the url of the video.</p>
+                </div>
 
-            <p class = "inline align-top">This project was concepted 1 year ago as a simple django based website</p>
-            <p class = "inline align-top">for downloading YouTube Videos by providing the url of the video</p>
+                <div class = "inline align-top">
+                    <p>After It was partially done (with some low-level bugs),</p>
+                    <p>It was "abandoned", and now It's rework is based on <b class = "text-green-500">Django</b>.</p>
+                </div>
+                
+
 
         </div>
+
+    
+        <div class = "container container max-w-xl m-auto flex flex-wrap flex-col md:flex-row items-left justify-start text-2xl py-16">
+
+                
+
+
+        </div>
+
+        
     </body>
 
 

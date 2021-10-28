@@ -16,10 +16,10 @@
 
         <!-- Navigation bar -->
 
-        <ul class = "inline space-x-4">
+        <ul class = "inline space-x-4 ">
 
-            <li class = "inline hover:text-red-500"> <a href = "/">Home</a></li>
-            <li class = "inline hover:text-red-500"> <a href = "/download">Download</a></li>
+            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1 divide-x-2"> <a href = "/">Home</a></li>
+            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1"> <a href = "/download">Download</a></li>
 
         </ul>
 
@@ -31,6 +31,27 @@
 
         
     </head>
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 15px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            
+            background-color: #171717;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+            
+            background-color: #c93030;
+
+
+        }
+
+    </style>
 
     <body>
 
@@ -58,15 +79,7 @@
 
         </div>
 
-    
-        <div class = "container container max-w-xl m-auto flex flex-wrap flex-col md:flex-row items-left justify-start text-2xl py-16">
-
-                
-
-
-        </div>
-
-        
+ 
     </body>
 
 

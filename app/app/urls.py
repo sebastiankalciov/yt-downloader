@@ -18,10 +18,12 @@ from django.urls import path
 
 from YTDownloader.views import (
     home_view,
-    aboutPage_view
+    aboutPage_view,
+    downloadPage_view
 )
 urlpatterns = [
     path('', home_view, name = "home"),
     path('about', aboutPage_view, name = "about"),
+    path('download', downloadPage_view, name = "download"),
     path('admin/', admin.site.urls),
 ]

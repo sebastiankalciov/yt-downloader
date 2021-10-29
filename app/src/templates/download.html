@@ -1,48 +1,87 @@
-<html class = "text-gray-300 p-5 select-none" style = "background-color: 0a0a0a;">
+<html class = "text-gray-300 p-5 select-none m-1" style = "background-color: 0a0a0a;">
 
     {%load static%}
 
     <head>
     
+        <title> YT-Downloader | Download</title>
         <!-- Important code about responsivity -->
         <meta charset = "UTF-8">
         
         <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
-
         <meta name = "viewport" content = "user-scalable=no,width=device-width,initial-scale=1">
+
+        <link rel = "icon" type "image/png" href = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEB0lEQVR4nO3cz4sbdRjH8ffznU0ubtWboKLShVJJNz/Y7mYRT7q9bKl/gdZDtRb1oJRCz3pREdaq0ArVg/4Hihbr9ubBZLvMJJiCQrHYIngr7nrJ5pvHwzay1RW77Sbfmczzuk1ymA/zSYYnM98MGGOMMcYYY4wxxpi8kH++sFIuH1DnXlJYAJ4A7ht9rLHyJ3BNYFn6/fOz7faPW9/8u4BOqVRcKxSWBE4AbtQpc8Ijcnay2z1Z6nS6cKuATqlUXC8WL6D6TNh8OaF6abLXWyx1Ol0HsFYoLNnBHyGRZ9cnJt4HkJVy+UDfuQSIAsfKGy+qFedFXsYOfgiRihxzIrIQOkmOHXLAY6FT5NjjDpgMnSLH9ti8H5gVEJgVEJgVEJgVEJgVEJgVEFjqChD4znk/5byfEvgA2AidaZikUa1q6BC36ff31tvtXwabjUplHyJLwGLAVEOTugLqSfKvu3QAzXL5iDq3BEyNONJQpe4U9F/m2u2voih6UuENYC10nt2SmQIADq6ubswnyZkNkf2ofgGk6tt7NzJVwMDTcfxbvdU6KlBH9YfQee5FJgsYmEuSlblW6ylEXgR+D53nbmS6AAABrcfx50XYj8i7QDd0pp3IfAEDtSS5WY/j06hOA9+EznOnxqaAgXqr9XM9SQ5Lv/8ccDV0nv8zdgUMZGVsHdsCIBtj61gXMJDmsTUXBQykcWzNVQFw+9iqsBw6T+4KGKglyc2JKDoROkduC0iL3BZweWbmgZ7350LnyF0BCtKo1Y5673+SzX8BBTUROsAoNavV2abqh6jOh84ykIsCvq/VHi70++8oPI/ItnfcQhnrAi7PzBR63r8qqm8hcn/oPNsZ2wKa5fIR7/2SpPwe8tgVMFhFoRlZRTE2BcTV6oNdkdOovgkUQ+e5U5kvQEGatdoLXdX3UH0odJ6dynQBaRwrdyqTBaR5rNypTBWwZax8G5E9ofPshswUkJWxcqdSdy1oZXp679btRqWyr1Gtfq3OfcmYHXxI4eJcheXI+1ekWJS+968rvAYUQucaltSdggQW+lF0Fe9DRxmJ1J2C8sYKCMwKCMwKCMwKCMwKCMwKCMyR4pXDOfCHA66HTpFjvzqBi6FT5JWqfutQPQ/k43d/unic+8zNtVodRM6GTpM3Ah/Px/EVBzDZ7Z5E9VLoUHmhsOyi6BTcGkNLnU53stdbRPUj7HQ0TD2BMxNRtHhwdXUDtnl8fbNSKanIMeAQm4+vt8da3pt14BoiFxU+nY/jK6EDGWOMSYehL2pqVKuHgU+AR4a9r112w4kcn43jC8PcySiuhp4jewcf4NH+5gdnqOxydGBDL8CJHAduDHs/u07kumxmN8YYY4wxxhhjjDFmV/wFDzZBkHfvXGoAAAAASUVORK5CYII=">
         <link rel = "stylesheet" href = "{% static "tailwind.css" %}" type = 'text/css'> 
 
         <!-- Navigation bar -->
 
-        <ul class = "inline space-x-4">
+        <ul class = "inline space-x-4 ">
 
-            <li class = "inline hover:text-red-500"> <a href = "/">Home</a></li>
-            <li class = "inline hover:text-red-500"> <a href = "/download">Download</a></li>
+            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1 divide-x-2"> <a href = "/">Home</a></li>
+            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1"> <a href = "/about">About</a></li>
 
         </ul>
 
 
         <!-- Title & Subtitle -->
 
-        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> About this project... </h1>
+        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Download Videos... </h1>
         <h4 id = "subtitle" class = "text-center text-2xl text-gray-300 leading-loose"><b class = "text-red-500">YT</b> Video Downloader</h4>
 
         
     </head>
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 15px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+
+            background-color: #171717;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+
+            background-color: #c93030;
+
+
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            
+            background-color: #b52b2b;
+
+
+        }
+
+    </style>
 
     <body>
 
-        <!-- Info div with bouncing logo -->
+        <!-- Div with input form and 1 button -->
+        <div class = "inline-flex space-y-5">
 
-        <div class = "leading-loose space-y-36 py-8">
+            <form action = "/downloading" method = "GET" class = "py-36 w-96 leading-loose space-y-5">
 
-            <img class = "inline animate-bounce w-200 h-200 leading-loose flex-grow" src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-youtube-social-media-justicon-flat-justicon.png"/>
+                <label>🔗 Video URL </label>
+                <input class = "w-96 border-b-2 rounded border-red-500 bg-transparent flex justify focus:outline-none" id = "input" name = "input" placeholder = "Paste an YouTube Video URL here">
+                
+                <button class = "transition duration-100 border-b-4 border-red-700 bg-red-600 inline-flex items-center py-0.5 px-4">
+                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                    <span> Download </span>
+                
+                </button>
 
-            <p class = "inline align-top">This project was concepted 1 year ago as a simple django based website</p>
-            <p class = "inline align-top">for downloading YouTube Videos by providing the url of the video</p>
+            </form>
 
+            
         </div>
         
+
+ 
     </body>
 
 

@@ -8,3 +8,6 @@ def home_view(request, *args, **kwargs):
 
 def aboutPage_view(request, *args, **kwargs):
     return render(request, "about.html", {})
+
+def downloadPage_view(request, *args, **kwargs):
+    return render(request, "download.html", {})

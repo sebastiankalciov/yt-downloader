@@ -4,7 +4,7 @@
 
     <head>
     
-        <title> YT-Downloader | Download</title>
+        <title> YT-Downloader | Downloading...</title>
         <!-- Important code about responsivity -->
         <meta charset = "UTF-8">
         
@@ -19,14 +19,14 @@
         <ul class = "inline space-x-4 ">
 
             <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1 divide-x-2"> <a href = "/">Home</a></li>
-            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1"> <a href = "/about">About</a></li>
+            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1"> <a href = "/download">Download</a></li>
 
         </ul>
 
 
         <!-- Title & Subtitle -->
 
-        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Download Videos... </h1>
+        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Downloading </h1>
         <h4 id = "subtitle" class = "text-center text-2xl text-gray-300 leading-loose"><b class = "text-red-500">YT</b> Video Downloader</h4>
 
         
@@ -39,13 +39,11 @@
         }
 
         ::-webkit-scrollbar-track {
-
             background-color: #171717;
 
         }
 
         ::-webkit-scrollbar-thumb {
-
             background-color: #c93030;
 
 
@@ -60,28 +58,8 @@
     </style>
 
     <body>
+        <h1> {{response}} </h1>
 
-        <!-- Div with input form and 1 button -->
-        <div class = "inline-flex space-y-5">
-            {% csrf_token %}
-            <form action = "/success" method = "GET" class = "py-36 w-96 leading-loose space-y-5">
-
-                <label>🔗 Video URL </label>
-                <input class = "w-96 border-b-2 rounded border-red-500 bg-transparent flex justify focus:outline-none" id = "input" name = "input" placeholder = "Paste an YouTube Video URL here" required>
-                
-
-
-                <button class = "transition duration-100 border-b-4 border-red-700 bg-red-600 inline-flex items-center py-0.5 px-4">
-                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                    <span> Download </span>
-                
-                </button>
-
-            </form>
-
-            
-        </div>
-        
 
  
     </body>

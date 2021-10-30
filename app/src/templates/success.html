@@ -26,7 +26,7 @@
 
         <!-- Title & Subtitle -->
 
-        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Downloading </h1>
+        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Downloading... </h1>
         <h4 id = "subtitle" class = "text-center text-2xl text-gray-300 leading-loose"><b class = "text-red-500">YT</b> Video Downloader</h4>
 
         
@@ -58,8 +58,28 @@
     </style>
 
     <body>
-        <h1> {{response}} </h1>
 
+        {% if response == True %}
+        <div class = "py-36">
+            <svg xmlns = "http://www.w3.org/2000/svg" x = "0px" y = "0px" class = "transition duration-100 animate-bounce inline"
+                width = "24" height = "24"
+                viewBox = "0 0 172 172"
+                style = " fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M145.43294,37.93294l-80.93294,80.93295l-30.76628,-30.76628l-10.13411,10.13411l40.90039,40.90039l91.06706,-91.06705z"></path></g></g>
+            
+            </svg>
+            <span class = "text-2xl leading-loose py-36"> Video downloaded <b class = "text-green-500">succesfully</b>!</span>
+
+        </div>
+        {% else %}
+            <div class = "py-36">
+                <svg xmlns = "http://www.w3.org/2000/svg" x = "0px" y = "0px" class = "transition duration-100 animate-bounce inline"
+                    width = "24" height = "24"
+                    viewBox = "0 0 172 172"
+                    style = " fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#d93e3e"><path d="M86,14.33333c-39.49552,0 -71.66667,32.17115 -71.66667,71.66667c0,39.49552 32.17115,71.66667 71.66667,71.66667c39.49552,0 71.66667,-32.17115 71.66667,-71.66667c0,-39.49552 -32.17115,-71.66667 -71.66667,-71.66667zM86,28.66667c31.74921,0 57.33333,25.58412 57.33333,57.33333c0,13.28034 -4.52029,25.44568 -12.05176,35.14746l-80.42903,-80.42904c9.70178,-7.53147 21.86713,-12.05176 35.14746,-12.05176zM40.71842,50.85254l80.42904,80.42903c-9.70178,7.53147 -21.86713,12.05176 -35.14746,12.05176c-31.74921,0 -57.33333,-25.58412 -57.33333,-57.33333c0,-13.28034 4.52029,-25.44568 12.05176,-35.14746z"></path></g></g>
+                </svg>
+                <span class = "text-2xl leading-loose py-36"> Download <b class = "text-red-500">failed</b>! Try again...</span>
+            <div>
+        {% endif %}
 
  
     </body>

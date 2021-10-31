@@ -1,32 +1,30 @@
-# <img src="https://i.imgur.com/vRz9BFk.png" width="30px"> yt-downloader
+# <img src="https://i.imgur.com/vRz9BFk.png" width="30px"> YT-Downloader
 
-A simple to use **YouTube** video downloader.
+A simple to use **YouTube** Video Downloader.
+
+
 ## Technology used
-This tool is made using **Python(Flask)** for Back-End, **HTML** and **Tailwindcss** for Front-End.
+This tool is made using **Django** and Html/Css(TailWindCss).
 
 ## Requirements:
 You need to install:
 * [Python 3.8](https://www.python.org/) (I strongly recommend, if you're a beginner in programming, to install [Anaconda](https://www.anaconda.com/products/individual) because it's easier to install and it comes with all the stuff you need to run Python apps.)
-* Pip Module [pytube](https://pypi.org/project/pytube/)
-* Pip Module [Flask](https://pypi.org/project/Flask/)
-
+* Pip Module [pytube](https://pypi.org/project/pytube/) (latest version)
+* Web-Framework [Django](https://www.djangoproject.com/download/)
 
 ## Usage
-Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app/templates).
+Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app).
 ```bash
-$ set FLASK_APP = run.py
-$ flask run
+$ python manage.py runserver
+# Open a browser and get to 127.0.0.1:8000 (Default address where Django starts the web app)
 # Make sure you are in the right directory, otherwise you will get an error.
 ```
 
-## Up coming updates
-Reminder: This project is still in beta, bugs may appear, it's not completely done. 
-* A modern design.
-* More functionality.
-* Reducing the size of the code.
-Hopefully, to be done by the end of this year.
+## Updates
+* Earlier version of this tool was made using **Flask**, now it's made using **Django**
+* New design
 
  
-<img src = "https://duck1337.is-inside.me/bXc7qriI.png" width = "500px">
+<img src = "https://i.imgur.com/NloVBtG.png" width = "500px">
 
 

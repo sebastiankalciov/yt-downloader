@@ -12,7 +12,6 @@ You need to install:
 * Pip Module [pytube](https://pypi.org/project/pytube/) (latest version)
 * Web-Framework [Django](https://www.djangoproject.com/download/)
 
-
 ## Usage
 Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app).
 ```bash

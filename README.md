@@ -11,7 +11,7 @@ You need to install:
 * [Python 3.8](https://www.python.org/) (I strongly recommend, if you're a beginner in programming, to install [Anaconda](https://www.anaconda.com/products/individual) because it's easier to install and it comes with all the stuff you need to run Python apps.)
 * Pip Module [pytube](https://pypi.org/project/pytube/) (latest version)
 * Web-Framework [Django](https://www.djangoproject.com/download/)
-
+* In app/src/static/ it should be installed tailwind.css file from official website.
 ## Usage
 Open a command prompt and run the command from below. Make sure you are in the required directory(yt-downloader/app).
 ```bash

@@ -26,12 +26,12 @@ $ python manage.py runserver
 ```
 
 ## Updates
--[x] Changed the design
--[x] Replaced `pytube` with `yt-dlp`
+- [x] Changed the design
+- [x] Replaced `pytube` with `yt-dlp`
 
 ## To-do
--[ ] Ask user for a location on where to download the file (current location is `Downloads`)
--[ ] Display info about the video (thumbnail, title, etc)
--[ ] Better design
+- [ ] Ask user for a location on where to download the file (current location is `Downloads`)
+- [ ] Display info about the video (thumbnail, title, etc)
+- [ ] Better design
 
 

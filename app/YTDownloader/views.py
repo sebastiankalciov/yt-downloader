@@ -1,8 +1,8 @@
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import render
 from .forms import URLForm
-import pytube
-
+import yt_dlp
+from pathlib import Path
 import os
 
 def home_view(request, *args, **kwargs):
@@ -22,11 +22,16 @@ def successPage_view(request, *args, **kwargs):
     response = False
     if request.GET["input"]:
         video_url = request.GET["input"]
-        try:  
+        try:
+            path =  '/'.join(os.getcwd().split('/')[:3]) + '/Downloads/'
+            ydl_opts = {
+                'format': 'bestaudio',
+                'outtmpl': path + '%(title)s.mp3'
+            }
 
-            youtube = pytube.YouTube(video_url)
-            video = youtube.streams.first()
-            video.download(f'{os.path.abspath(os.getcwd())}/output')
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download(video_url)
+
             response = True
         except Exception as e:
             response = False

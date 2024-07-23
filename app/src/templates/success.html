@@ -3,86 +3,58 @@
     {%load static%}
 
     <head>
-    
-        <title> YT-Downloader | Downloading...</title>
-        <!-- Important code about responsivity -->
+
+        <title> YT-Downloader</title>
         <meta charset = "UTF-8">
-        
+
         <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
         <meta name = "viewport" content = "user-scalable=no,width=device-width,initial-scale=1">
-
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel = "icon" type "image/png" href = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEB0lEQVR4nO3cz4sbdRjH8ffznU0ubtWboKLShVJJNz/Y7mYRT7q9bKl/gdZDtRb1oJRCz3pREdaq0ArVg/4Hihbr9ubBZLvMJJiCQrHYIngr7nrJ5pvHwzay1RW77Sbfmczzuk1ymA/zSYYnM98MGGOMMcYYY4wxxpi8kH++sFIuH1DnXlJYAJ4A7ht9rLHyJ3BNYFn6/fOz7faPW9/8u4BOqVRcKxSWBE4AbtQpc8Ijcnay2z1Z6nS6cKuATqlUXC8WL6D6TNh8OaF6abLXWyx1Ol0HsFYoLNnBHyGRZ9cnJt4HkJVy+UDfuQSIAsfKGy+qFedFXsYOfgiRihxzIrIQOkmOHXLAY6FT5NjjDpgMnSLH9ti8H5gVEJgVEJgVEJgVEJgVEJgVEFjqChD4znk/5byfEvgA2AidaZikUa1q6BC36ff31tvtXwabjUplHyJLwGLAVEOTugLqSfKvu3QAzXL5iDq3BEyNONJQpe4U9F/m2u2voih6UuENYC10nt2SmQIADq6ubswnyZkNkf2ofgGk6tt7NzJVwMDTcfxbvdU6KlBH9YfQee5FJgsYmEuSlblW6ylEXgR+D53nbmS6AAABrcfx50XYj8i7QDd0pp3IfAEDtSS5WY/j06hOA9+EznOnxqaAgXqr9XM9SQ5Lv/8ccDV0nv8zdgUMZGVsHdsCIBtj61gXMJDmsTUXBQykcWzNVQFw+9iqsBw6T+4KGKglyc2JKDoROkduC0iL3BZweWbmgZ7350LnyF0BCtKo1Y5673+SzX8BBTUROsAoNavV2abqh6jOh84ykIsCvq/VHi70++8oPI/ItnfcQhnrAi7PzBR63r8qqm8hcn/oPNsZ2wKa5fIR7/2SpPwe8tgVMFhFoRlZRTE2BcTV6oNdkdOovgkUQ+e5U5kvQEGatdoLXdX3UH0odJ6dynQBaRwrdyqTBaR5rNypTBWwZax8G5E9ofPshswUkJWxcqdSdy1oZXp679btRqWyr1Gtfq3OfcmYHXxI4eJcheXI+1ekWJS+968rvAYUQucaltSdggQW+lF0Fe9DRxmJ1J2C8sYKCMwKCMwKCMwKCMwKCMwKCMyR4pXDOfCHA66HTpFjvzqBi6FT5JWqfutQPQ/k43d/unic+8zNtVodRM6GTpM3Ah/Px/EVBzDZ7Z5E9VLoUHmhsOyi6BTcGkNLnU53stdbRPUj7HQ0TD2BMxNRtHhwdXUDtnl8fbNSKanIMeAQm4+vt8da3pt14BoiFxU+nY/jK6EDGWOMSYehL2pqVKuHgU+AR4a9r112w4kcn43jC8PcySiuhp4jewcf4NH+5gdnqOxydGBDL8CJHAduDHs/u07kumxmN8YYY4wxxhhjjDFmV/wFDzZBkHfvXGoAAAAASUVORK5CYII=">
-        <link rel = "stylesheet" href = "{% static "tailwind.css" %}" type = 'text/css'> 
+        <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Navigation bar -->
-
-        <ul class = "inline space-x-4 ">
-
-            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1 divide-x-2"> <a href = "/">Home</a></li>
-            <li class = "transition duration-300 inline hover:text-red-500 border-red-500 border-b-4 rounded py-1 px-1"> <a href = "/download">Download</a></li>
-
-        </ul>
-
-
-        <!-- Title & Subtitle -->
-
-        <h1 id = "title" class = "text-center text-5xl text-white font-bold tracking-wide leading-loose"> Downloading... </h1>
-        <h4 id = "subtitle" class = "text-center text-2xl text-gray-300 leading-loose"><b class = "text-red-500">YT</b> Video Downloader</h4>
-
-        
     </head>
-    <style>
-        ::-webkit-scrollbar {
-            width: 15px;
-            height: 15px;
 
-        }
+    <header>
+        <nav class="w-full p-4 flex justify-start">
+            <div class="flex space-x-4">
+                <a href="/" class="font-semibold border-b-2 border-red-500">Home</a>
+                <a href="/download" class="font-semibold border-b-2 border-red-500">Download</a>
+            </div>
+        </nav>
+    </header>
 
-        ::-webkit-scrollbar-track {
-            background-color: #171717;
+    <body class="min-h-screen flex flex-col ">
 
-        }
+    <main class="flex flex-col items-center mt-10">
+            <h1 class="text-6xl font-bold pb-10">YouTube Downloader</h1>
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #c93030;
-
-
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            
-            background-color: #b52b2b;
-
-
-        }
-
-    </style>
-
-    <body>
 
         {% if response == True %}
-        <div class = "py-36">
-            <svg xmlns = "http://www.w3.org/2000/svg" x = "0px" y = "0px" class = "transition duration-100 animate-bounce inline"
-                width = "24" height = "24"
-                viewBox = "0 0 172 172"
-                style = " fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M145.43294,37.93294l-80.93294,80.93295l-30.76628,-30.76628l-10.13411,10.13411l40.90039,40.90039l91.06706,-91.06705z"></path></g></g>
-            
-            </svg>
-            <span class = "text-2xl leading-loose py-36"> Video downloaded <b class = "text-green-500">succesfully</b>!</span>
+            <div class = "py-10">
 
-        </div>
+                <span class = "text-2xl leading-loose py-36"> Video downloaded <b class = "text-green-500">succesfully</b>!</span>
+
+            </div>
         {% else %}
-            <div class = "py-36">
-                <svg xmlns = "http://www.w3.org/2000/svg" x = "0px" y = "0px" class = "transition duration-100 animate-bounce inline"
-                    width = "24" height = "24"
-                    viewBox = "0 0 172 172"
-                    style = " fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#d93e3e"><path d="M86,14.33333c-39.49552,0 -71.66667,32.17115 -71.66667,71.66667c0,39.49552 32.17115,71.66667 71.66667,71.66667c39.49552,0 71.66667,-32.17115 71.66667,-71.66667c0,-39.49552 -32.17115,-71.66667 -71.66667,-71.66667zM86,28.66667c31.74921,0 57.33333,25.58412 57.33333,57.33333c0,13.28034 -4.52029,25.44568 -12.05176,35.14746l-80.42903,-80.42904c9.70178,-7.53147 21.86713,-12.05176 35.14746,-12.05176zM40.71842,50.85254l80.42904,80.42903c-9.70178,7.53147 -21.86713,12.05176 -35.14746,12.05176c-31.74921,0 -57.33333,-25.58412 -57.33333,-57.33333c0,-13.28034 4.52029,-25.44568 12.05176,-35.14746z"></path></g></g>
-                </svg>
+            <div class = "py-10">
+
                 <span class = "text-2xl leading-loose py-36"> Download <b class = "text-red-500">failed</b>! Try again...</span>
             <div>
         {% endif %}
 
- 
+        </div>
+        </div>
+    </main>
+
     </body>
 
+    <style>
+        html {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #070e12, #122127, #14272d);
+            color: #ffffff;
+        }
 
+    </style>
 </html>
